@@ -1,0 +1,1 @@
+g++ -o "/home/marklion/projects/zinx/bin/x64/Debug/zinx.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/marklion/projects/zinx/obj/x64/Debug/main.o /home/marklion/projects/zinx/obj/x64/Debug/TcpDataChannel.o /home/marklion/projects/zinx/obj/x64/Debug/utils.o /home/marklion/projects/zinx/obj/x64/Debug/zinx.o

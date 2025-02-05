@@ -1,0 +1,21 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.64.148'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  TcpDataChannel.cpp
+C:\Users\markl\source\repos\zinx\TcpDataChannel.cpp(29,12): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+C:\Users\markl\source\repos\zinx\TcpDataChannel.cpp(29,12): warning :    irecvlen = recv(m_socket, szBuff, sizeof(szBuff), MSG_DONTWAIT);
+C:\Users\markl\source\repos\zinx\TcpDataChannel.cpp(29,12): warning :             ^
+C:\Users\markl\source\repos\zinx\TcpDataChannel.h(28,26): warning : ‘TcpListenChannel::m_port’ will be initialized after [-Wreorder]
+C:\Users\markl\source\repos\zinx\TcpDataChannel.h(28,26): warning :   unsigned short m_port = 0;
+C:\Users\markl\source\repos\zinx\TcpDataChannel.h(28,26): warning :                           ^
+C:\Users\markl\source\repos\zinx\TcpDataChannel.h(27,37): warning : ‘TcpDataChannelFactory* TcpListenChannel::m_factory’ [-Wreorder]
+C:\Users\markl\source\repos\zinx\TcpDataChannel.h(27,37): warning :   TcpDataChannelFactory *m_factory = NULL;
+C:\Users\markl\source\repos\zinx\TcpDataChannel.h(27,37): warning :                                      ^
+C:\Users\markl\source\repos\zinx\TcpDataChannel.cpp(172,1): warning : when initialized here [-Wreorder]
+C:\Users\markl\source\repos\zinx\TcpDataChannel.cpp(180,10): warning : deleting object of abstract class type ‘TcpDataChannelFactory’ which has non-virtual destructor will cause undefined behaviour [-Wdelete-non-virtual-dtor]
+C:\Users\markl\source\repos\zinx\TcpDataChannel.cpp(180,10): warning :    delete m_factory;
+C:\Users\markl\source\repos\zinx\TcpDataChannel.cpp(180,10): warning :           ^
+  Linking objects
+  zinx.vcxproj -> C:\Users\markl\source\repos\zinx\bin\x64\Debug\zinx.out
